@@ -41,10 +41,10 @@ function getForecast(city) {
 
 function displayForecast(response) {
   //console.log(response.data);
-  let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
+  //let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
   let forecastHTML = "";
 
-  days.forEach(function (day) {
+  response.data.daily.forEach(function (day) {
     forecastHTML =
       forecastHTML +
       `
@@ -53,7 +53,7 @@ function displayForecast(response) {
     <div class="weather-forecast-icon">🌥️</div>
     <div class="weather-forecast-temp">
       <div class="forecast-red">
-        <strong>15°</strong>
+        <strong>${day.temperature.minimum}</strong>
       </div>
       <div class="forecast-faint-red">9°</div>
     </div>
