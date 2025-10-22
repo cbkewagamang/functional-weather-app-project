@@ -117,8 +117,9 @@ footer {
 }
 .weather-forecast-icon {
   padding-bottom: 15px;
-  display: flex;
-  justify-content: center;
+  /*display: flex;
+  justify-content: center;*/
+  width: 100%;
 }
 .weather-forecast-temp {
   display: flex;
