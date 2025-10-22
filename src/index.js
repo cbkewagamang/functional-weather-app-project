@@ -113,4 +113,4 @@ let currentDate = new Date();
 currentDateELement.innerHTML = formatDate(currentDate);
 
 //displayForecast();
-getForecast("paris");
+getForecast("Paris");
